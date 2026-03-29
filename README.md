@@ -81,9 +81,9 @@ A key contribution of this project is the **target-oriented feature selection** 
 
 | Variable | Correlation | p-value | Justification |
 |---|---|---|---|
-| GENDER | 0.020 | ≈0 | Physiological differences M/F in ICU |
+| GENDER | 0.020 | ~0 | Physiological differences M/F in ICU |
 | ICU | 0.014 | 0.0001 | ICU unit reflects case severity |
-| INSURANCE | 0.001 | 0.792 | Clinical justification: proxy for SES → care access (USA/MIMIC context) |
+| INSURANCE | 0.001 | 0.792 | Clinical justification: proxy for SES -> care access (USA/MIMIC context) |
 
 ### Numerical/binary variables:
 All retained clinically meaningful (comorbidities, vital signs). Low individual correlations are expected on synthetic data; PCA handles dimensionality reduction downstream.
@@ -130,8 +130,8 @@ All retained clinically meaningful (comorbidities, vital signs). Low individual 
 
 |  | Predicted Survival | Predicted Death |
 |---|---|---|
-| **Real Survival** | VN = 10,789 ✓ | FP = 4,652 |
-| **Real Death** | FN = 204 ✗ | VP = 355 ✓ |
+| **Real Survival** | VN = 10,789  | FP = 4,652 |
+| **Real Death** | FN = 204  | VP = 355  |
 
 355 deaths detected out of 559; 204 missed (FN: most critical clinical error).
 
@@ -224,7 +224,7 @@ dependencies:
   - pip
 ```
 
-## Data
+**Data**
 https://drive.google.com/drive/folders/1kgsddZQmk-0dgpK62Si198djGbz29qx7
 
 ---
